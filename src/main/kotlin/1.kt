@@ -110,7 +110,7 @@ open class RoundHut(residents:Int, val radius:Double):Dwelling(residents){
     override val capacity=4
 
     /**
-     * Calcute floor area for a round dwelling.
+     * Calculate floor area for a round dwelling.
      *
      * @return floor area
      */
@@ -119,7 +119,7 @@ open class RoundHut(residents:Int, val radius:Double):Dwelling(residents){
     }
 
     /**
-     * Calculate the max lenngth for a square carpet
+     * Calculate the max length for a square carpet
      * that fits the circular floor.
      *
      * @return length of carpet
@@ -137,7 +137,7 @@ open class RoundHut(residents:Int, val radius:Double):Dwelling(residents){
  * @param radius Radius
  * @param floor number of stories
  */
-class RoundTower(residents:Int, radius:Double, val floor:Int=2):RoundHut(residents,radius){
+class RoundTower(residents:Int, radius:Double, private val floor:Int=2):RoundHut(residents,radius){
     override val buildingMaterial="stone"
     //Capacity depends on the number of floors.
     override val capacity=4*floor
