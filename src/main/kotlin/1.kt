@@ -7,7 +7,7 @@
 import kotlin.math.sqrt
 import kotlin.math.PI
 fun main() {
-    val squareCabin=SquareCabin(7,50.0)
+    val squareCabin=SquareCabin(2,50.0)
     val roundHut=RoundHut(3,3.4)
     val roundTower=RoundTower(4,10.0)
 
